@@ -1,0 +1,1388 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.1">
+    
+    
+      
+        <title>Basic concepts - timesketch</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.9299cb39.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ef6f36e2.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="../../assets/css/extra.css">
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+  
+    
+    <script>function __prefix(e){return new URL("../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#concepts" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="timesketch" class="md-header__button md-logo" aria-label="timesketch" data-md-component="logo">
+      
+  <img src="../../assets/images/timesketch-color.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            timesketch
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Basic concepts
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../.." class="md-tabs__link">
+      Home
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../getting-started/install/" class="md-tabs__link">
+        Getting started
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="./" class="md-tabs__link md-tabs__link--active">
+        Learn
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../developers/developer-guide/" class="md-tabs__link">
+        Developers
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../community/resources/" class="md-tabs__link">
+        Community
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="timesketch" class="md-nav__button md-logo" aria-label="timesketch" data-md-component="logo">
+      
+  <img src="../../assets/images/timesketch-color.svg" alt="logo">
+
+    </a>
+    timesketch
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      
+      <label class="md-nav__link" for="__nav_2">
+        Getting started
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Getting started" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Getting started
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting-started/install/" class="md-nav__link">
+        Installation
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting-started/upload-data/" class="md-nav__link">
+        Upload data
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
+      
+      <label class="md-nav__link" for="__nav_3">
+        Learn
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Learn" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Learn
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Basic concepts
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Basic concepts
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#concepts" class="md-nav__link">
+    Concepts
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#login" class="md-nav__link">
+    Login
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sketches" class="md-nav__link">
+    Sketches
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#adding-timelines" class="md-nav__link">
+    Adding Timelines
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#adding-event" class="md-nav__link">
+    Adding event
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#add-a-comment" class="md-nav__link">
+    Add a comment
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#star-an-event" class="md-nav__link">
+    Star an event
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#views" class="md-nav__link">
+    Views
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#insights-aggegations" class="md-nav__link">
+    Insights / Aggegations
+  </a>
+  
+    <nav class="md-nav" aria-label="Insights / Aggegations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#terms-aggregation" class="md-nav__link">
+    Terms aggregation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#filtered-terms-aggregation" class="md-nav__link">
+    Filtered terms aggregation
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#customize-columns" class="md-nav__link">
+    Customize columns
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#stories" class="md-nav__link">
+    Stories
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#demo" class="md-nav__link">
+    Demo
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#searching" class="md-nav__link">
+    Searching
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#analyzers" class="md-nav__link">
+    Analyzers
+  </a>
+  
+    <nav class="md-nav" aria-label="Analyzers">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#analyzer-description" class="md-nav__link">
+    Analyzer description
+  </a>
+  
+    <nav class="md-nav" aria-label="Analyzer description">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#browser-search-analyzer" class="md-nav__link">
+    Browser Search Analyzer
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#browser-timeframe-analyzer" class="md-nav__link">
+    Browser Timeframe Analyzer
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#chain-analyzer" class="md-nav__link">
+    Chain analyzer
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#domain-analyzer" class="md-nav__link">
+    Domain Analyzer
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#windows-evtx-sessionizer" class="md-nav__link">
+    Windows EVTX Sessionizer
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#windows-evtx-gap-analyzer" class="md-nav__link">
+    Windows EVTX Gap analyzer
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#safebrowsing-analyzer" class="md-nav__link">
+    Safebrowsing Analyzer
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sigma-analyzer" class="md-nav__link">
+    Sigma Analyzer
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#yetiindicators-analyzer" class="md-nav__link">
+    YetiIndicators Analyzer
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sketch-overview/" class="md-nav__link">
+        Sketch overview
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../search-query-guide/" class="md-nav__link">
+        Search query guide
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../notebook/" class="md-nav__link">
+        Interactive notebook
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_5" type="checkbox" id="__nav_3_5" >
+      
+      <label class="md-nav__link" for="__nav_3_5">
+        Howto
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Howto" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_5">
+          <span class="md-nav__icon md-icon"></span>
+          Howto
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../create-timeline-from-json-csv/" class="md-nav__link">
+        Create timeline from JSON or CSV
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sigma/" class="md-nav__link">
+        Use Sigma
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_6" type="checkbox" id="__nav_3_6" >
+      
+      <label class="md-nav__link" for="__nav_3_6">
+        Deployment
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Deployment" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_6">
+          <span class="md-nav__icon md-icon"></span>
+          Deployment
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../upgrade/" class="md-nav__link">
+        Upgrade
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../server-admin/" class="md-nav__link">
+        Server administration
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      <label class="md-nav__link" for="__nav_4">
+        Developers
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Developers" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Developers
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developers/developer-guide/" class="md-nav__link">
+        Getting started
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_2" type="checkbox" id="__nav_4_2" >
+      
+      <label class="md-nav__link" for="__nav_4_2">
+        API client
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="API client" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_2">
+          <span class="md-nav__icon md-icon"></span>
+          API client
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developers/api-client/" class="md-nav__link">
+        Introduction
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developers/api-upload-data/" class="md-nav__link">
+        Upload data via API
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_3" type="checkbox" id="__nav_4_3" >
+      
+      <label class="md-nav__link" for="__nav_4_3">
+        Analyzers
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Analyzers" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_3">
+          <span class="md-nav__icon md-icon"></span>
+          Analyzers
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developers/analyzer-development/" class="md-nav__link">
+        Create an analyzer
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+      
+      <label class="md-nav__link" for="__nav_5">
+        Community
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Community" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Community
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../community/resources/" class="md-nav__link">
+        Resources
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../community/2021_timesketch_summit/" class="md-nav__link">
+        2021 Summit
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#concepts" class="md-nav__link">
+    Concepts
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#login" class="md-nav__link">
+    Login
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sketches" class="md-nav__link">
+    Sketches
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#adding-timelines" class="md-nav__link">
+    Adding Timelines
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#adding-event" class="md-nav__link">
+    Adding event
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#add-a-comment" class="md-nav__link">
+    Add a comment
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#star-an-event" class="md-nav__link">
+    Star an event
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#views" class="md-nav__link">
+    Views
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#insights-aggegations" class="md-nav__link">
+    Insights / Aggegations
+  </a>
+  
+    <nav class="md-nav" aria-label="Insights / Aggegations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#terms-aggregation" class="md-nav__link">
+    Terms aggregation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#filtered-terms-aggregation" class="md-nav__link">
+    Filtered terms aggregation
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#customize-columns" class="md-nav__link">
+    Customize columns
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#stories" class="md-nav__link">
+    Stories
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#demo" class="md-nav__link">
+    Demo
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#searching" class="md-nav__link">
+    Searching
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#analyzers" class="md-nav__link">
+    Analyzers
+  </a>
+  
+    <nav class="md-nav" aria-label="Analyzers">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#analyzer-description" class="md-nav__link">
+    Analyzer description
+  </a>
+  
+    <nav class="md-nav" aria-label="Analyzer description">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#browser-search-analyzer" class="md-nav__link">
+    Browser Search Analyzer
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#browser-timeframe-analyzer" class="md-nav__link">
+    Browser Timeframe Analyzer
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#chain-analyzer" class="md-nav__link">
+    Chain analyzer
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#domain-analyzer" class="md-nav__link">
+    Domain Analyzer
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#windows-evtx-sessionizer" class="md-nav__link">
+    Windows EVTX Sessionizer
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#windows-evtx-gap-analyzer" class="md-nav__link">
+    Windows EVTX Gap analyzer
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#safebrowsing-analyzer" class="md-nav__link">
+    Safebrowsing Analyzer
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sigma-analyzer" class="md-nav__link">
+    Sigma Analyzer
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#yetiindicators-analyzer" class="md-nav__link">
+    YetiIndicators Analyzer
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                  <h1>Basic concepts</h1>
+                
+                <h2 id="concepts">Concepts</h2>
+<p>Timesketch is built on multiple sketches, where one sketch is usually one case.
+Every sketch can consist of multiple timelines with multiple views.</p>
+<h2 id="login">Login</h2>
+<p>Use the credentials provided by your Timesketch admin to log on to Timesketch or use OAuth to authenticate.</p>
+<h2 id="sketches">Sketches</h2>
+<p>There is a dedicated document to walk you through <a href="../sketch-overview/">Sketches</a></p>
+<h2 id="adding-timelines">Adding Timelines</h2>
+<ul>
+<li><a href="/docs/CreateTimelineFromJSONorCSV.md">Create timeline from JSON/JSONL/CSV file</a></li>
+<li><a href="/docs/UploadDataViaAPI.md">Upload data via the importer/API</a></li>
+<li><a href="/docs/EnablePlasoUpload.md">Enable Plaso upload via HTTP</a></li>
+</ul>
+<h2 id="adding-event">Adding event</h2>
+<p>This feature is currently not implemented in the Web UI. But you can add events using the <a href="/developers/api-client/">API client</a>.</p>
+<h2 id="add-a-comment">Add a comment</h2>
+<p>You can comment events in your sketch. The comments are safed in your sketch, that means if you add a timeline to multiple sketches, the comments are only shown in the one sketch you made the comments.</p>
+<h2 id="star-an-event">Star an event</h2>
+<p>Click the little star symbol in the Event List to star an event. Stared events can be used to filter on them and or to add all starred events in your story.</p>
+<h2 id="views">Views</h2>
+<p>Views are saved search queries. Those can either be created by the User, by API or via Analyzers.</p>
+<p>To create a view from the Web Ui, click the <em>Save as view</em> button on the top right of the Search fields in the Explore Tab of a sketch.</p>
+<h2 id="insights-aggegations">Insights / Aggegations</h2>
+<p>The <em>Insights</em> functionality in a sketch gives the opportunity to run aggregations on the events in a sketch.</p>
+<p>There are currently two aggregators available:
+- Terms aggregation
+- Filtered terms aggregation</p>
+<h3 id="terms-aggregation">Terms aggregation</h3>
+<p>The term aggregation can be used for example to get a table view of the present data types in the sketch.</p>
+<p>You can choose between the following chart types:</p>
+<ul>
+<li>circlechart</li>
+<li>table</li>
+<li>barchart</li>
+<li>hbchart</li>
+<li>linechart</li>
+</ul>
+<p>The next value to provide is the field you want to aggregate on, for example the data_type.</p>
+<p>The last value is the number of results to return.</p>
+<p>Once the aggregation is completed, you can save the aggregation by clicking the <em>save</em> button on the top right  corner of the aggregation result, for example to add it to a story.</p>
+<h3 id="filtered-terms-aggregation">Filtered terms aggregation</h3>
+<p>The filtered terms aggregation works the same way the terms aggregation works with one additional input field the filter query. This can be used for example to aggregate over data_types only for events that contain a certain string.</p>
+<h2 id="customize-columns">Customize columns</h2>
+<p>In the Explore view of a sketch the message is the only column visible. To add more columns, click the <em>customize</em> columns* button on the top right of the events list.</p>
+<p>The list of available columns is pre-populated from the columns in your timeline.</p>
+<h2 id="stories">Stories</h2>
+<p>A story is a place where you can capture the narrative of your technical investigation and add detail to your story with raw timeline data and aggregated data.
+The editor lets you to write and capture the story behind your investigation and at the same time enable you to share detailed findings without spending hours writing reports.</p>
+<p>You can add events from previously saved searches.
+Just hit enter to start a new paragraph and choose the saved search from the dropdown menu.</p>
+<p>See <a href="https://medium.com/timesketch/timesketch-2016-7-db3083e78156">Medium article</a></p>
+<p>You can add saved views, aggregations and text in markdown format to a story.</p>
+<p>Some analyzers automatically generate stories to either highlight possible events of interest or to document their runtime.</p>
+<p>If you want to export a story, export the whole Sketch. The zip file will contain each story. A story can also be exported using the <a href="/developers/api-client/">API Client</a>.</p>
+<h2 id="demo">Demo</h2>
+<p>To play with timesketch without any installation visit <a href="https://demo.timesketch.org">demo.timesketch.org</a> as <code>demo/demo</code>.</p>
+<h2 id="searching">Searching</h2>
+<p>There is a dedicated document called <a href="../search-query-guide/">SearchQueryGuide</a> to help you create custom searches.</p>
+<p>All data within Timesketch is stored in elasticsearch. So the search works similar to ES.</p>
+<p>Using the advances search, a JSON can be passed to Timesketch</p>
+<pre><code class="language-json">{
+ &quot;query&quot;: {
+   &quot;bool&quot;: {
+     &quot;must&quot;: [
+       {
+         &quot;query_string&quot;: {
+           &quot;query&quot;: &quot;*&quot;
+         }
+       }
+     ]
+   }
+ },
+ &quot;sort&quot;: {
+   &quot;datetime&quot;: &quot;asc&quot;
+ }
+}
+</code></pre>
+<h2 id="analyzers">Analyzers</h2>
+<p>With Analyzers you can enrich your data in timelines. The analysers are written in Python.</p>
+<p>The system consist of a set of background workers that can execute Python code on a stream of events. It provides an easy to use API to programmatically do all the actions available in the UI, e.g. tagging events, star and create saved views etc. The idea is to automatically enrich data with encoded analysis knowledge.</p>
+<p>The code for Analyzers is located at</p>
+<pre><code class="language-shell">/timesketch/lib/analyzers
+</code></pre>
+<h3 id="analyzer-description">Analyzer description</h3>
+<p><em>Note:</em> Not all analyzers are explained in this documentation. If you have questions to a particular analyzer, please have a look at the code or file an <a href="https://github.com/google/timesketch/issues/new">Issue on Github</a>.</p>
+<h4 id="browser-search-analyzer">Browser Search Analyzer</h4>
+<p>The browser search analyzer takes URLs usually reserved for browser search queries and extracts the search string.</p>
+<p>It will also tell in a story:</p>
+<ul>
+<li>The top 20 most commonly discovered searches</li>
+<li>The domains used to search</li>
+<li>The most common days of search</li>
+<li>And an overview of all the discovered search terms</li>
+</ul>
+<h4 id="browser-timeframe-analyzer">Browser Timeframe Analyzer</h4>
+<p>The browser time frame analyzer discovers browser events that occurred outside of the typical browsing window of this browser history.</p>
+<p>The analyzer determines the activity hours by finding the frequency of browsing events per hour, and then discovering the longest block of most active hours before proceeding with flagging all events outside of that time period. This information can be used by other analyzers or by manually looking for other activity within the inactive time period to find unusual actions.</p>
+<h4 id="chain-analyzer">Chain analyzer</h4>
+<p>Sketch analyzer for chained events</p>
+<p>The purpose of the chain analyzer is to chain together events that can be described as linked, either by sharing some common entities, or one event being a derivative of another event. An example of this would be that a browser downloads an executable, which then later gets executed.</p>
+<p>The signs of execution could lie in multiple events, from different sources, but they are all linked or chained together. This could help an analyst see the connection between these separate but chained events. Another example could be a document written and then compressed into a ZIP file, which would then be exfilled through some means. If the document and the ZIP file are chained together it could be easier for the analyst to track the meaning of an exfil event involving the compressed file.</p>
+<h4 id="domain-analyzer">Domain Analyzer</h4>
+<p>The Domain Analyzer extracts domain and Top Level Domain (TLD) info from events that have a field with either <code>url</code> or <code>domain</code>.</p>
+<p>It will also add information about:</p>
+<ul>
+<li>Known CDN providers (based on Timesketch config)</li>
+</ul>
+<h4 id="windows-evtx-sessionizer">Windows EVTX Sessionizer</h4>
+<p>This Analyzer will determine the start and end event for a user session based on EVTX events.</p>
+<h4 id="windows-evtx-gap-analyzer">Windows EVTX Gap analyzer</h4>
+<p>It attempts to detect gaps in EVTX files found in an index using two different methods.</p>
+<p>First of all it looks at missing entries in record numbers and secondly it attempts to look at gaps in days with no records.</p>
+<p>This may be an indication of someone clearing the logs, yet it may be an indication of something else. At least this should be interpreted as something that warrants a second look.</p>
+<p>This will obviously not catch every instance of someone clearing EVTX records, even if that's done in bulk. Therefore it should not be interpreted that if this analyzer does not discover something that the records have not been wiped. Please verify the results given by this analyzer.</p>
+<p>The results of this analyzer will be a story, that details the findings.</p>
+<h4 id="safebrowsing-analyzer">Safebrowsing Analyzer</h4>
+<p>This Analyzer checks urls found in a sketch against the <a href="https://developers.google.com/safe-browsing/v4/reference/rest">Google Safebrowsing API</a>.</p>
+<p>To use this Analyzer, the following parameter must be set in the <code>timesketch.conf</code>:</p>
+<pre><code class="language-config">SAFEBROWSING_API_KEY = ''
+</code></pre>
+<p>This analyzer can be customized by creating an optional file containing URL wildcards to be allow listed called</p>
+<pre><code class="language-config">safebrowsing_allowlist.yaml
+</code></pre>
+<p>There are also two additional config parameters, please refer to the <a href="https://developers.google.com/safe-browsing/v4/reference/rest">Safe Browsing API reference</a>.</p>
+<p>Platforms to be looked at in Safe Browsing (PlatformType).
+<code>SAFEBROWSING_PLATFORMS = ['ANY_PLATFORM']</code></p>
+<p>Types to be looked at in Safe Browsing (ThreatType).
+<code>SAFEBROWSING_THREATTYPES = ['MALWARE']</code></p>
+<h4 id="sigma-analyzer">Sigma Analyzer</h4>
+<p>The Sigma Analyzer translates Sigma rules in Elastic Search Queries and adds a tag to every matching event.</p>
+<p>It will also create a story with the Top 10 matched Sigma rules.</p>
+<p>There is a dedicated document to walk you through the process of using the <a href="../sigma/">Sigma Analyzer</a>.</p>
+<h4 id="yetiindicators-analyzer">YetiIndicators Analyzer</h4>
+<p>This is a Index analyzer for <a href="https://yeti-platform.github.io/">Yeti</a> threat intel indicators.</p>
+<p>To use this Analyzer, the following parameter must be set with corresponding values in the <code>timesketch.conf</code>:</p>
+<pre><code class="language-config">YETI_API_ROOT = ''
+YETI_API_KEY = ''
+</code></pre>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        <a href="../../getting-started/upload-data/" class="md-footer__link md-footer__link--prev" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Upload data
+            </div>
+          </div>
+        </a>
+      
+      
+        <a href="../sketch-overview/" class="md-footer__link md-footer__link--next" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Sketch overview
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+        
+      </div>
+      
+  <div class="md-footer-social">
+    
+      
+      
+        
+        
+      
+      <a href="https://github.com/google/timesketch" target="_blank" rel="noopener" title="github.com" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+      </a>
+    
+  </div>
+
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.sections", "navigation.tabs"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../../assets/javascripts/workers/search.fe42c31b.min.js", "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.7353b375.min.js"></script>
+      
+    
+  </body>
+</html>

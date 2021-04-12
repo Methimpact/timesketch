@@ -1,0 +1,1240 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.1">
+    
+    
+      
+        <title>Getting started - timesketch</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.9299cb39.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ef6f36e2.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="../../assets/css/extra.css">
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+  
+    
+    <script>function __prefix(e){return new URL("../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#developers-guide" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="timesketch" class="md-header__button md-logo" aria-label="timesketch" data-md-component="logo">
+      
+  <img src="../../assets/images/timesketch-color.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            timesketch
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Getting started
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../.." class="md-tabs__link">
+      Home
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../getting-started/install/" class="md-tabs__link">
+        Getting started
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../learn/basic-concepts/" class="md-tabs__link">
+        Learn
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="./" class="md-tabs__link md-tabs__link--active">
+        Developers
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../community/resources/" class="md-tabs__link">
+        Community
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="timesketch" class="md-nav__button md-logo" aria-label="timesketch" data-md-component="logo">
+      
+  <img src="../../assets/images/timesketch-color.svg" alt="logo">
+
+    </a>
+    timesketch
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      
+      <label class="md-nav__link" for="__nav_2">
+        Getting started
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Getting started" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Getting started
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting-started/install/" class="md-nav__link">
+        Installation
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting-started/upload-data/" class="md-nav__link">
+        Upload data
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      <label class="md-nav__link" for="__nav_3">
+        Learn
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Learn" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Learn
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learn/basic-concepts/" class="md-nav__link">
+        Basic concepts
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learn/sketch-overview/" class="md-nav__link">
+        Sketch overview
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learn/search-query-guide/" class="md-nav__link">
+        Search query guide
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learn/notebook/" class="md-nav__link">
+        Interactive notebook
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_5" type="checkbox" id="__nav_3_5" >
+      
+      <label class="md-nav__link" for="__nav_3_5">
+        Howto
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Howto" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_5">
+          <span class="md-nav__icon md-icon"></span>
+          Howto
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learn/create-timeline-from-json-csv/" class="md-nav__link">
+        Create timeline from JSON or CSV
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learn/sigma/" class="md-nav__link">
+        Use Sigma
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_6" type="checkbox" id="__nav_3_6" >
+      
+      <label class="md-nav__link" for="__nav_3_6">
+        Deployment
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Deployment" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_6">
+          <span class="md-nav__icon md-icon"></span>
+          Deployment
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learn/upgrade/" class="md-nav__link">
+        Upgrade
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learn/server-admin/" class="md-nav__link">
+        Server administration
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
+      
+      <label class="md-nav__link" for="__nav_4">
+        Developers
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Developers" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Developers
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Getting started
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Getting started
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#locations-and-concepts" class="md-nav__link">
+    Locations and concepts
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#frontend-development" class="md-nav__link">
+    Frontend development
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#running-tests-and-linters" class="md-nav__link">
+    Running tests and linters
+  </a>
+  
+    <nav class="md-nav" aria-label="Running tests and linters">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#writing-unittests" class="md-nav__link">
+    Writing unittests
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#end2end-tests" class="md-nav__link">
+    end2end tests
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#writing-end2end-tests" class="md-nav__link">
+    Writing end2end tests
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#building-timesketch-frontend" class="md-nav__link">
+    Building Timesketch frontend
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#packaging" class="md-nav__link">
+    Packaging
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#local-development" class="md-nav__link">
+    Local development
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-notebook" class="md-nav__link">
+    Using Notebook
+  </a>
+  
+    <nav class="md-nav" aria-label="Using Notebook">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#developing-the-api-client-using-the-notebook" class="md-nav__link">
+    Developing the API Client Using the Notebook
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#api-development" class="md-nav__link">
+    API development
+  </a>
+  
+    <nav class="md-nav" aria-label="API development">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#error-handling" class="md-nav__link">
+    Error handling
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_2" type="checkbox" id="__nav_4_2" >
+      
+      <label class="md-nav__link" for="__nav_4_2">
+        API client
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="API client" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_2">
+          <span class="md-nav__icon md-icon"></span>
+          API client
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-client/" class="md-nav__link">
+        Introduction
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-upload-data/" class="md-nav__link">
+        Upload data via API
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_3" type="checkbox" id="__nav_4_3" >
+      
+      <label class="md-nav__link" for="__nav_4_3">
+        Analyzers
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Analyzers" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_3">
+          <span class="md-nav__icon md-icon"></span>
+          Analyzers
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../analyzer-development/" class="md-nav__link">
+        Create an analyzer
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+      
+      <label class="md-nav__link" for="__nav_5">
+        Community
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Community" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Community
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../community/resources/" class="md-nav__link">
+        Resources
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../community/2021_timesketch_summit/" class="md-nav__link">
+        2021 Summit
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#locations-and-concepts" class="md-nav__link">
+    Locations and concepts
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#frontend-development" class="md-nav__link">
+    Frontend development
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#running-tests-and-linters" class="md-nav__link">
+    Running tests and linters
+  </a>
+  
+    <nav class="md-nav" aria-label="Running tests and linters">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#writing-unittests" class="md-nav__link">
+    Writing unittests
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#end2end-tests" class="md-nav__link">
+    end2end tests
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#writing-end2end-tests" class="md-nav__link">
+    Writing end2end tests
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#building-timesketch-frontend" class="md-nav__link">
+    Building Timesketch frontend
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#packaging" class="md-nav__link">
+    Packaging
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#local-development" class="md-nav__link">
+    Local development
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-notebook" class="md-nav__link">
+    Using Notebook
+  </a>
+  
+    <nav class="md-nav" aria-label="Using Notebook">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#developing-the-api-client-using-the-notebook" class="md-nav__link">
+    Developing the API Client Using the Notebook
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#api-development" class="md-nav__link">
+    API development
+  </a>
+  
+    <nav class="md-nav" aria-label="API development">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#error-handling" class="md-nav__link">
+    Error handling
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="developers-guide">Developers guide</h1>
+<p>It is recommended to develop Timesketch using a docker container.</p>
+<p>Note: Exclamation mark <code>!</code> denotes commands that should run in the docker container shell, dollar sign <code>$</code> denotes commands to run in your local shell.</p>
+<h4 id="locations-and-concepts">Locations and concepts</h4>
+<ul>
+<li>Timesketch provides a webinterface and a REST API</li>
+<li>The configurations is located at <code>/data</code> sourcecode folder</li>
+<li>The front end uses <code>Vue.js</code> framework and is stored at <code>/timesketch/frontend</code></li>
+<li>Code that is used in potentially multiple locations is stored in <code>/timesketch/lib</code> </li>
+<li>Analyzers are located at <code>/timesketch/lib/analyzers</code></li>
+<li>The API methods are defined in <code>/timesketch/api</code> </li>
+<li>API client code is in <code>/api_client/python/timesketch_api_client</code></li>
+<li>Data models are defined in <code>/timesketch/models</code></li>
+</ul>
+<h4 id="frontend-development">Frontend development</h4>
+<p>First we need to get an interactive shell to the container to install the frontend modules:</p>
+<pre><code class="language-bash">$ docker exec -it $CONTAINER_ID bash
+</code></pre>
+<p>Then inside the container shell go to the Timesketch frontend directory. </p>
+<pre><code class="language-bash">! cd /usr/local/src/timesketch/timesketch/frontend
+</code></pre>
+<p>Note that this directory in the container is mounted as volume from your local repo and mirrors changes to your local repo.</p>
+<p>Install node dependencies</p>
+<pre><code class="language-bash">! npm install
+</code></pre>
+<p>This will create <code>node_modules/</code> folder from <code>package.json</code> in the frontend directory.</p>
+<pre><code class="language-bash">! yarn install
+</code></pre>
+<h4 id="running-tests-and-linters">Running tests and linters</h4>
+<p>The main entry point is <code>run_tests.py</code> in Timesketch root. Please note that for testing 
+and linting python/frontend code in your local environment you need respectively python/
+frontend dependencies installed.</p>
+<p>For more information:</p>
+<pre><code class="language-python">! run_tests.py --help
+</code></pre>
+<p>To run frontend tests in watch mode, cd to <code>frontend</code> directory and use</p>
+<pre><code class="language-bash">! yarn run test --watch
+</code></pre>
+<p>To run TSLint in watch mode, use</p>
+<pre><code class="language-bash">! yarn run lint --watch
+</code></pre>
+<p>To run a single test (there are multiple ways to do it), open a shell in the docker container:</p>
+<pre><code class="language-shell">$ docker exec -it $CONTAINER_ID /bin/bash
+</code></pre>
+<p>Switch to:</p>
+<pre><code class="language-shell">! cd /usr/local/src/timesketch
+</code></pre>
+<p>And execute the single test</p>
+<pre><code class="language-shell">! nosetests timesketch/lib/emojis_test.py -v
+</code></pre>
+<p>Or all in one:</p>
+<pre><code class="language-bash">$ sudo docker exec -it $CONTAINER_ID nosetests /usr/local/src/timesketch/timesketch/lib/emojis_test.py -v
+</code></pre>
+<h5 id="writing-unittests">Writing unittests</h5>
+<p>It is recommended to write unittests as much as possible.</p>
+<p>Test files in Timesketch have the naming convention <code>_test.py</code> and are stored next to the files they test. E.g. a test file for <code>/timesketch/lib/emojis.py</code> is stored as <code>/timesketch/lib/emojis_test.py</code></p>
+<p>The unittests for the api client can use <code>mock</code> to emulate responses from the server. The mocked answers are written in: <code>api_client/python/timesketch_api_client/test_lib.py</code>. </p>
+<p>To introduce a new API endpoint to be tested, the endpoint needs to be registered in the <code>url_router</code> section in <code>/api_client/python/timesketch_api_client/test_lib.py</code> and the response needs to be defined in the same file.</p>
+<h4 id="end2end-tests">end2end tests</h4>
+<p>End2end (e2e) tests are run on Github with every commit. Those tests will setup and run a full Timesketch instance, with the ability to import data and perform actions with it.
+To run the e2e-tests locally execute to setup the e2e docker images and run them:</p>
+<pre><code class="language-bash">$ sh end_to_end_tests/tools/run_end_to_end_tests.sh
+</code></pre>
+<p>The tests are stored in:</p>
+<pre><code class="language-shell">end_to_end_tests/*.py
+</code></pre>
+<p>And the sample data (currently a plaso file and a csv) is stored in:</p>
+<pre><code class="language-shell">end_to_end_tests/test_data/
+</code></pre>
+<h4 id="writing-end2end-tests">Writing end2end tests</h4>
+<p>While writing end2end tests one approach to make it easier to develop these e2e tests is to create a simlink to the source files, in order for the changes to the files being reflected in the container. Another way is to mount the Timesketch source code from <code>/usr/local/src/timesketch/</code> to <code>/usr/local/lib/python3.8/dist-packages/</code></p>
+<p>The following example is for changing / adding tests to <code>client_test.py</code></p>
+<pre><code class="language-shell">$ export CONTAINER_ID=&quot;$(sudo -E docker container list -f name=e2e_timesketch -q)&quot;
+$ docker exec -it $CONTAINER_ID /bin/bash
+! rm /usr/local/lib/python3.8/dist-packages/end_to_end_tests/client_test.py
+! ln -s /usr/local/src/timesketch/end_to_end_tests/client_test.py /usr/local/lib/python3.8/dist-packages/end_to_end_tests/client_test.py
+</code></pre>
+<p>From now on you can edit the <code>client_test.py</code> file outside of the docker instance and run it again with</p>
+<pre><code class="language-shell">! python3 /usr/local/src/timesketch/end_to_end_tests/tools/run_in_container.py
+</code></pre>
+<p>or run the following outside of the container:</p>
+<pre><code class="language-bash">$ sudo docker exec -it $CONTAINER_ID python3 /usr/local/src/timesketch/end_to_end_tests/tools/run_in_container.py
+</code></pre>
+<h4 id="building-timesketch-frontend">Building Timesketch frontend</h4>
+<p>To build frontend files and put bundles in <code>timesketch/static/dist/</code>, use</p>
+<pre><code class="language-bash">! yarn run build
+</code></pre>
+<p>To watch for changes in code and rebuild automatically, use</p>
+<pre><code class="language-bash">! yarn run build --watch
+</code></pre>
+<p>This is what you would normally use when making changes to the frontend.
+Changes are not instantaneous, it takes a couple of seconds to rebuild. It's best to
+keep this interactive shell to your container running so you can monitor the re-build.</p>
+<p>Don't forget to refresh page if your browser doesn't automatically load the changes.</p>
+<h4 id="packaging">Packaging</h4>
+<p>Before pushing package to PyPI, make sure you build the frontend before.</p>
+<h4 id="local-development">Local development</h4>
+<p>You may work on the frontend for your local environment for integration with your IDE or other reasons. This is not recommended however as it may cause clashes with your installed NodeJS.</p>
+<p>Add Node.js 8.x repo</p>
+<pre><code class="language-bash">$ curl -sS https://deb.nodesource.com/gpgkey/nodesource.gpg.key | sudo apt-key add -
+$ echo &quot;deb https://deb.nodesource.com/node_8.x $(lsb_release -s -c) main&quot;  | sudo tee /etc/apt/sources.list.d/nodesource.list
+</code></pre>
+<p>Add Yarn repo</p>
+<pre><code class="language-bash">$ curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+$ echo &quot;deb https://dl.yarnpkg.com/debian/ stable main&quot; | sudo tee /etc/apt/sources.list.d/yarn.list
+
+```bash
+Install Node.js and Yarn
+
+```bash
+$ apt-get update &amp;&amp; apt-get install nodejs yarn
+</code></pre>
+<p>After that you would run the same steps as with docker container to install frontend 
+dependencies and build/test.</p>
+<h4 id="using-notebook">Using Notebook</h4>
+<p>The development container contains a jupyter notebook environment to expirement
+with the developer instance.</p>
+<p>To access the notebook access it in a browser using the URL:
+http://localhost:8844/?token=timesketch</p>
+<p>(you can also just access http://localhost:8844 and type in <code>timesketch</code> as the
+password).</p>
+<p>To get you started there are snippets you can use (look for the <code>snippets</code>
+drop-down menu and select the code snippet you want to test.</p>
+<p>To be able to use the notebook container using
+<a href="https://colab.research.google.com">colab</a> start by creating a notebook and then
+click the little triangle/arrow button in the upper right corner to connect to a
+local runtime, see:</p>
+<p><img alt="Connect to Local Runtime" src="/assets/images/colab_local_runtime.png" /></p>
+<p>This will create a pop-up that you need to enter the URL for the local runtime.
+Use: http://localhost:8844/?token=timesketch as the URL.</p>
+<p><img alt="Enter Local Runtime Information" src="/assets/images/notebook_connect.png" /></p>
+<p>This will connect to the notebook container, where you can start executing code.</p>
+<p><img alt="Running In Colab" src="/assets/images/colab_connected.png" /></p>
+<p><em>There are some things that work better in the Jupyter container though.</em></p>
+<h5 id="developing-the-api-client-using-the-notebook">Developing the API Client Using the Notebook</h5>
+<p>Using the notebook can be very helpful when developing the API client. New features
+can be easily tested.</p>
+<p>In order to load changes made in the code, two things need to happen:</p>
+<ol>
+<li>The code needs to be accessible from the container</li>
+<li>The code needs to be installed and the kernel restarted</li>
+</ol>
+<p>For the code to be accessible, it has to be readable by the user with the UID of 1000 or GID
+of 1000. One way of making sure is to run</p>
+<pre><code class="language-shell">$ sudo chgrp -R 1000 timesketch
+</code></pre>
+<p>Against the source folder. Then inside a notebook to run:</p>
+<pre><code class="language-python">!pip install /usr/local/src/timesketch/api_client/python
+</code></pre>
+<p>After the code is installed the kernel needs to restarted to make the changes take
+effect. In the menu select <code>Kernel | Restart</code>, now you should be able to go back
+into the notebook and make use of the latest changes in the API client.</p>
+<p><img alt="Restarting Kernel" src="/assets/images/kernel_restart.png" /></p>
+<h4 id="api-development">API development</h4>
+<p>Exposing new functionality via the API starts at <code>/timesketch/api/v1/routes.py</code>. In that file the different routes / endpoints are defined that can be used.
+Typically every route has a dedicated Resource file in <code>/timesketch/api/v1/resources</code>.</p>
+<p>A resource can have <code>GET</code> as well as <code>POST</code>or other HTTP methods each defined in the same resource file. A good example of a resource that has a mixture is <code>/timesketch/api/v1/resources/archive.py</code>.</p>
+<p>To write tests for the resource, add a section in <code>/timesketch/api/v1/resources_test.py</code></p>
+<h5 id="error-handling">Error handling</h5>
+<p>It is recommended to expose the error with as much detail as possible to the user / tool that is trying to access the resource.</p>
+<p>For example the following will give a human readable information as well as a HTTP status code that client code can react on</p>
+<pre><code class="language-python">if not sketch:
+            abort(HTTP_STATUS_CODE_NOT_FOUND, 'No sketch found with this ID.')
+</code></pre>
+<p>On the opposite side the following is not recommended:</p>
+<pre><code class="language-python">if not sketch:
+            abort(HTTP_STATUS_CODE_BAD_REQUEST, 'Error')
+</code></pre>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        <a href="../../learn/server-admin/" class="md-footer__link md-footer__link--prev" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Server administration
+            </div>
+          </div>
+        </a>
+      
+      
+        <a href="../api-client/" class="md-footer__link md-footer__link--next" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Introduction
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+        
+      </div>
+      
+  <div class="md-footer-social">
+    
+      
+      
+        
+        
+      
+      <a href="https://github.com/google/timesketch" target="_blank" rel="noopener" title="github.com" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+      </a>
+    
+  </div>
+
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.sections", "navigation.tabs"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../../assets/javascripts/workers/search.fe42c31b.min.js", "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.7353b375.min.js"></script>
+      
+    
+  </body>
+</html>

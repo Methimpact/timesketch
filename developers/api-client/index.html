@@ -1,0 +1,1494 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.1">
+    
+    
+      
+        <title>Introduction - timesketch</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.9299cb39.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ef6f36e2.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="../../assets/css/extra.css">
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+  
+    
+    <script>function __prefix(e){return new URL("../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#api-client" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="timesketch" class="md-header__button md-logo" aria-label="timesketch" data-md-component="logo">
+      
+  <img src="../../assets/images/timesketch-color.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            timesketch
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Introduction
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../.." class="md-tabs__link">
+      Home
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../getting-started/install/" class="md-tabs__link">
+        Getting started
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../learn/basic-concepts/" class="md-tabs__link">
+        Learn
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../developer-guide/" class="md-tabs__link md-tabs__link--active">
+        Developers
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../community/resources/" class="md-tabs__link">
+        Community
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="timesketch" class="md-nav__button md-logo" aria-label="timesketch" data-md-component="logo">
+      
+  <img src="../../assets/images/timesketch-color.svg" alt="logo">
+
+    </a>
+    timesketch
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      
+      <label class="md-nav__link" for="__nav_2">
+        Getting started
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Getting started" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Getting started
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting-started/install/" class="md-nav__link">
+        Installation
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting-started/upload-data/" class="md-nav__link">
+        Upload data
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      <label class="md-nav__link" for="__nav_3">
+        Learn
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Learn" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Learn
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learn/basic-concepts/" class="md-nav__link">
+        Basic concepts
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learn/sketch-overview/" class="md-nav__link">
+        Sketch overview
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learn/search-query-guide/" class="md-nav__link">
+        Search query guide
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learn/notebook/" class="md-nav__link">
+        Interactive notebook
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_5" type="checkbox" id="__nav_3_5" >
+      
+      <label class="md-nav__link" for="__nav_3_5">
+        Howto
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Howto" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_5">
+          <span class="md-nav__icon md-icon"></span>
+          Howto
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learn/create-timeline-from-json-csv/" class="md-nav__link">
+        Create timeline from JSON or CSV
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learn/sigma/" class="md-nav__link">
+        Use Sigma
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_6" type="checkbox" id="__nav_3_6" >
+      
+      <label class="md-nav__link" for="__nav_3_6">
+        Deployment
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Deployment" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_6">
+          <span class="md-nav__icon md-icon"></span>
+          Deployment
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learn/upgrade/" class="md-nav__link">
+        Upgrade
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learn/server-admin/" class="md-nav__link">
+        Server administration
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
+      
+      <label class="md-nav__link" for="__nav_4">
+        Developers
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Developers" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Developers
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../developer-guide/" class="md-nav__link">
+        Getting started
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+    
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_2" type="checkbox" id="__nav_4_2" checked>
+      
+      <label class="md-nav__link" for="__nav_4_2">
+        API client
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="API client" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_2">
+          <span class="md-nav__icon md-icon"></span>
+          API client
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Introduction
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Introduction
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#basic-connections" class="md-nav__link">
+    Basic Connections
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#client-config" class="md-nav__link">
+    Client Config
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-the-timesketch-client" class="md-nav__link">
+    Using the Timesketch Client
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#connecting-to-a-sketch" class="md-nav__link">
+    Connecting to a Sketch
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#overview-of-a-sketch" class="md-nav__link">
+    Overview of a Sketch
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#explore-data" class="md-nav__link">
+    Explore Data
+  </a>
+  
+    <nav class="md-nav" aria-label="Explore Data">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#saved-searches" class="md-nav__link">
+    Saved Searches
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#search-query" class="md-nav__link">
+    Search Query
+  </a>
+  
+    <nav class="md-nav" aria-label="Search Query">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#retrieve-a-stored-search" class="md-nav__link">
+    Retrieve a Stored Search
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configure-using-the-explore-function" class="md-nav__link">
+    Configure using the Explore Function
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configure-manually" class="md-nav__link">
+    Configure Manually
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#chips" class="md-nav__link">
+    Chips
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get-the-results" class="md-nav__link">
+    Get The Results
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#store-a-search" class="md-nav__link">
+    Store a Search
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aggregations" class="md-nav__link">
+    Aggregations
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sigma-rules" class="md-nav__link">
+    Sigma rules
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get-a-single-rule" class="md-nav__link">
+    Get a single rule
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get-a-list-of-rules" class="md-nav__link">
+    Get a list of rules
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#other-options" class="md-nav__link">
+    Other Options
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#examples" class="md-nav__link">
+    Examples
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-upload-data/" class="md-nav__link">
+        Upload data via API
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_3" type="checkbox" id="__nav_4_3" >
+      
+      <label class="md-nav__link" for="__nav_4_3">
+        Analyzers
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Analyzers" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_3">
+          <span class="md-nav__icon md-icon"></span>
+          Analyzers
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../analyzer-development/" class="md-nav__link">
+        Create an analyzer
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+      
+      <label class="md-nav__link" for="__nav_5">
+        Community
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Community" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Community
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../community/resources/" class="md-nav__link">
+        Resources
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../community/2021_timesketch_summit/" class="md-nav__link">
+        2021 Summit
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#basic-connections" class="md-nav__link">
+    Basic Connections
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#client-config" class="md-nav__link">
+    Client Config
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-the-timesketch-client" class="md-nav__link">
+    Using the Timesketch Client
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#connecting-to-a-sketch" class="md-nav__link">
+    Connecting to a Sketch
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#overview-of-a-sketch" class="md-nav__link">
+    Overview of a Sketch
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#explore-data" class="md-nav__link">
+    Explore Data
+  </a>
+  
+    <nav class="md-nav" aria-label="Explore Data">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#saved-searches" class="md-nav__link">
+    Saved Searches
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#search-query" class="md-nav__link">
+    Search Query
+  </a>
+  
+    <nav class="md-nav" aria-label="Search Query">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#retrieve-a-stored-search" class="md-nav__link">
+    Retrieve a Stored Search
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configure-using-the-explore-function" class="md-nav__link">
+    Configure using the Explore Function
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configure-manually" class="md-nav__link">
+    Configure Manually
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#chips" class="md-nav__link">
+    Chips
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get-the-results" class="md-nav__link">
+    Get The Results
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#store-a-search" class="md-nav__link">
+    Store a Search
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aggregations" class="md-nav__link">
+    Aggregations
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sigma-rules" class="md-nav__link">
+    Sigma rules
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get-a-single-rule" class="md-nav__link">
+    Get a single rule
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get-a-list-of-rules" class="md-nav__link">
+    Get a list of rules
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#other-options" class="md-nav__link">
+    Other Options
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#examples" class="md-nav__link">
+    Examples
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="api-client">API Client</h1>
+<p>The API client is a set of Python libraries that can be used to interact with the REST API of Timesketch from notebooks or scripts. It takes
+care of setting up authentication, sending the API calls to the server, error handling, and presentation.</p>
+<p>This documentation will give an overview for the most common use cases of the API client. Some available methods will not be covered in this documentation
+whereas others will be documented further in a notebook (e.g. <a href="/notebooks/colab-timesketch-demo.ipynb">colab-timesketch-demo notebook</a>).</p>
+<h2 id="basic-connections">Basic Connections</h2>
+<p>The API client defines a config library specifically intended to help with setting up all configuration for connecting to Timesketch, including
+authentication and server information. The config client will read stored connection information from <code>~/.timesketchrc</code>, asking the user questions
+if information is missing (and subsequently storing the results of those questions in the RC file for future lookups).</p>
+<p>An example use of the config client:</p>
+<pre><code class="language-python">from timesketch_api_client import config
+
+ts_client = config.get_client()
+</code></pre>
+<p>If the configuration file has more than a single section you can define which
+section to use:</p>
+<pre><code class="language-python">from timesketch_api_client import config
+
+ts_client = config.get_client(config_section='my_section')
+</code></pre>
+<p>To be able to take advantage of the config client, the user needs to be running this from the command line or in a way where questions can be asked
+and answered (or the config file to be fully populated). This works both in CLI scripts as well as in a notebook.</p>
+<p>By default the client credentials will be stored on disk in a Token file, in an encrypted format, protected by a randomly generated
+password that is stored in the RC file. It is highly recommended to protect your credential file using a strong password. The password
+for the file can be passed on to the config class using:</p>
+<pre><code>ts_client = config.get_client(token_password='MY_SUPER_L337_PWD')
+</code></pre>
+<p>If the token file does not exist, it will be generated and encrypted using the supplied password.</p>
+<h2 id="client-config">Client Config</h2>
+<p>In order to make it simpler to connect to the API client a config file
+can be generated or created to store information needed to connect.</p>
+<p>The file is stored in the user's home directory, in a file called
+<code>$HOME/.timesketchrc</code>.</p>
+<p>The content of the file is:</p>
+<pre><code>[timesketch]
+...
+</code></pre>
+<p>An example config file for an API client that uses OAUTH to connect:</p>
+<pre><code>[timesketch]
+client_secret = &lt;redacted secret&gt;
+host_uri = https://mytimesketchhost.com
+username = myusername@mydomain.com
+auth_mode = oauth
+client_id = &lt;redacted client ID&gt;
+verify = True
+</code></pre>
+<p>A config file can have multiple sections to define which host to connect to.
+This is useful if you want to be able to connect to more than a single
+Timesketch instance, for instance your development instance and a production
+one.</p>
+<p>An example of that would be:</p>
+<pre><code>[timesketch]
+host_uri = https://myprodtimesketch.corp.com
+username = myselfandirene
+verify = True
+client_id = 
+client_secret = 
+auth_mode = userpass
+cred_key = &lt;redacted&gt;
+
+[timesketch-dev]
+host_uri = http://localhost:5000
+username = dev
+verify = True
+client_id = 
+client_secret = 
+auth_mode = userpass
+cred_key = &lt;redacted&gt;
+token_file_path = /home/myselfandirene/.timesketch.dev.token
+</code></pre>
+<p>Each of the additional sections needs to define a separate token file using the
+<code>token_file_path</code>, otherwise the config will attempt to read the default token
+file.</p>
+<h2 id="using-the-timesketch-client">Using the Timesketch Client</h2>
+<p>The TS client only has limited functionality, such as to list open indices, what sketches the user has access to as well as to fetch sketches, indices, etc.
+The client object also contains functions to check for OAUTH token status and refresh it, if needed.</p>
+<p>Most of the functionality of the API client lies in sketch operations. To list all available sketches the function <code>list_sketches</code> can be used:</p>
+<pre><code>for sketch in ts_client.list_sketches():
+  # Do something with the sketches...
+</code></pre>
+<p>To print the name and description of all available sketches, something like:</p>
+<pre><code>for sketch in ts_client.list_sketches():
+  print('[{0:d}] {1:s} &lt;{2:s}&gt;'.format(sketch.id, sketch.name, sketch.description))
+</code></pre>
+<h2 id="connecting-to-a-sketch">Connecting to a Sketch</h2>
+<p>There are two ways of getting a sketch object, either by listing all available sketches or by fetching a specific one.
+To fetch a specific one use the <code>get_sketch</code> function:</p>
+<pre><code>sketch = ts_client.get_sketch(SKETCH_ID)
+</code></pre>
+<p>All that the function needs is the sketch ID, eg:</p>
+<pre><code>sketch = ts_client.get_sketch(25)
+</code></pre>
+<h2 id="overview-of-a-sketch">Overview of a Sketch</h2>
+<p>A sketch object has few properties that can be used to get a better overview of what it contains:</p>
+<ul>
+<li><strong>acl</strong>: A python dict with the current sketch ACL.</li>
+<li><strong>labels</strong>: A list of strings, with all the labels that are attached to the sketch.</li>
+<li><strong>name</strong>: The name of the sketch.</li>
+<li><strong>description</strong>: The description of the sketch.</li>
+<li><strong>status</strong>: The status of the sketch.</li>
+</ul>
+<p>Each of these properties can be accessed using <code>sketch.&lt;PROPERTY&gt;</code>, eg. <code>sketch.name</code>, or <code>sketch.labels</code></p>
+<h2 id="explore-data">Explore Data</h2>
+<p>The sketch object has several ways to explore data, via aggregations or searches.</p>
+<h3 id="saved-searches">Saved Searches</h3>
+<p>To list all saved searches, use the <code>list_saved_searches</code> function of the sketch
+object. This functions returns a <code>search.Search</code> object for all saved searches.
+An example overview would be:</p>
+<pre><code>for saved_search in sketch.list_saved_searches():
+  print('{0:03d} - {1:s} [{2:s}]'.format(saved_search.id, saved_search.name, saved_search.user))
+</code></pre>
+<p>To get a particular saved search:</p>
+<pre><code>saved_search = sketch.get_saved_search(search_id=&lt;SEARCH_ID&gt;)
+</code></pre>
+<p>or</p>
+<pre><code>saved_search = sketch.get_saved_search(search_name=&lt;SEARCH_NAME&gt;)
+</code></pre>
+<p>A search object can be used like this:</p>
+<pre><code>data = saved_search.table
+</code></pre>
+<p>The results will be a pandas DataFrame that contains all the records from the
+saved search.</p>
+<h3 id="search-query">Search Query</h3>
+<p>To search in the API client a search object is used. It will accept several
+parameters or configurations, for instances a free flowing query string
+(same as in the UI) or a raw Elastic query DSL. It can also support search
+chips.</p>
+<p>The output can be:
++ A pandas DataFrame.
++ A python dict.
++ Stored in a ZIP file.</p>
+<p>A search object is created from a sketch object.</p>
+<pre><code>from timesketch_api_client import search
+...
+
+search_obj = search.Search(sketch=sketch)
+</code></pre>
+<p>From there several options are possible:</p>
+<ul>
+<li>Restore a saved search using <code>from_saved(&lt;SEARCH_ID&gt;)</code></li>
+<li>Use the <code>from_manual</code> function that provides several parameters</li>
+<li>Individually set the needed parameters.</li>
+</ul>
+<p>The first thing you need to do after creating the object is to configure the
+search parameters:</p>
+<h4 id="retrieve-a-stored-search">Retrieve a Stored Search</h4>
+<p>To retrieve a stored search used the <code>from_saved</code>:</p>
+<pre><code>search_obj.from_saved(&lt;SEARCH_ID&gt;)
+</code></pre>
+<h4 id="configure-using-the-explore-function">Configure using the Explore Function</h4>
+<p>It is also possible to configure the search object using the <code>from_manual</code>
+function.</p>
+<pre><code>search_obj.from_manual(
+    query_string, query_dsl, query_filter,
+    return_fields, max_entries)
+</code></pre>
+<p>All of these parameters are optional, but in order for the search object to
+be able to query for results you need to provide either <code>query_string</code> or
+the <code>query_dsl</code>.</p>
+<ul>
+<li><strong>query_string</strong>: This is the Elastic query string, the same one as you would
+provide in the UI.</li>
+<li><strong>query_dsl</strong>: This is an Elastic Query DSL string. Please see the official
+documentation about how it is structured.</li>
+<li><strong>return_fields</strong>: This is a comma separated string with all the fields you
+want to be included in the returned value. If you want all fields returned you
+can use the wildcard '*'.</li>
+<li><strong>max_entries</strong>: By default the search object returns 10k records maximum. You
+may want to either reduce that or increase it. If the search has the potential
+to return more than 10k records a log record will be added indicating how many
+records there could be, so that the search can be repeated by increasing the max
+entries.</li>
+</ul>
+<h4 id="configure-manually">Configure Manually</h4>
+<p>All of the configurations that are present in the <code>from_manual</code> function are
+also directly available in the object itself, and can be set directly.</p>
+<pre><code>search_obj.query_string = 'my search'
+search_obj.max_entries = 10000000
+search_obj.return_fields = 'datetime,timestamp_desc,data_type,message,domain,url'
+</code></pre>
+<p>There are also other configurations possible. In Jupyter/Colab notebook you can
+always do</p>
+<pre><code>search_obj.*?
+</code></pre>
+<p>To find a list of all the possible configuration options.</p>
+<h4 id="chips">Chips</h4>
+<p>Chips are the "+ Time filter" or "+ Add label filter", etc elements you can
+see in the UI. There are several chips available:</p>
+<ul>
+<li>DateIntervalChip</li>
+<li>DateRangeChip</li>
+<li>TermChip</li>
+<li>LabelChip</li>
+</ul>
+<p>To add a chip to a search object simply use the <code>add_chip</code> function:</p>
+<pre><code>search_obj.add_chip(label_chip)
+</code></pre>
+<p>To view the existing chips:</p>
+<pre><code>[c.chip for c in search_obj.chips]
+</code></pre>
+<p>Or</p>
+<pre><code>search_obj.query_filter
+</code></pre>
+<p>Chips can also be removed using the <code>search_obj.remove_chip(chip_index)</code>
+function.</p>
+<p>Each chip will have their own way of configuring it, let's take an example of a
+date range chip.</p>
+<pre><code>range_chip = search.DateRangeChip()
+range_chip.start_time = '2013-09-20T22:20:47'
+range_chip.end_time = '2013-09-20T22:59:47'
+search_obj.add_chip(range_chip)
+</code></pre>
+<p>For an interval chip:</p>
+<pre><code>interval_chip = search.DateIntervalChip()
+interval_chip.date = '2013-09-20T22:39:47'
+interval_chip.before = 10
+interval_chip.after = 10
+interval_chip.unit = 'm'
+
+search_obj.add_chip(interval_chip)
+</code></pre>
+<p>Or a label chip:</p>
+<pre><code>label_chip = search.LabelChip()
+label_chip.label = 'foobar'
+search_obj.add_chip(label_chip)
+</code></pre>
+<p>Label chips can also be used to filter out all starred events, or events with
+comments. For that use:</p>
+<pre><code>label_chip.use_comment_label()
+</code></pre>
+<p>or</p>
+<pre><code>label_chip.use_star_label()
+</code></pre>
+<h4 id="get-the-results">Get The Results</h4>
+<p>Once you have constructed your search object, you may want to explore the
+results.</p>
+<p>To get the results as:
++ a pandas DataFrame use: <code>search_obj.table</code>
++ a dict, use <code>search_obj.dict</code>
++ a JSON string, use <code>search_obj.json</code></p>
+<p>Or if you want to store the results as a file:</p>
+<pre><code>search_obj.to_file('/tmp/myresults.zip')
+</code></pre>
+<p>(use the ZIP ending, since the resulting file will be a ZIP file with both the
+results as a CSV file and a METADATA file.</p>
+<h4 id="store-a-search">Store a Search</h4>
+<p>If you want to store the search query in the datastore, to make it accessible
+later on, or visible in the UI you can use the <code>save</code> function. First create a
+name and a description and then save the object.</p>
+<pre><code>search_obj.name = 'My First Saved Search'
+search_obj.description = 'This saves all my work'
+search_obj.save()
+</code></pre>
+<p>After you save it, each time you make a change to the search the change gets
+updated in the datastore. You can also call <code>save()</code> or <code>commit()</code> on the object
+to make sure it was saved.</p>
+<h3 id="aggregations">Aggregations</h3>
+<p>Another option to explore the data is via aggregations. To get a list of available aggregators use:</p>
+<pre><code>sketch.list_available_aggregators()
+</code></pre>
+<p>What gets returned back is a pandas DataFrame with all the aggregators and what parameters they need in order to work.</p>
+<p>An example aggregation is:</p>
+<pre><code>params = {
+    'field': 'domain',
+    'limit': 10,
+    'supported_charts': 'hbarchart',
+    'chart_title': 'Top 10 Domains Visited',
+}
+
+aggregation = sketch.run_aggregator(aggregator_name='field_bucket', aggregator_parameters=params)
+</code></pre>
+<p>This will return back an aggregation object that can be used to display the data, eg in a pandas DataFrame</p>
+<pre><code>df = aggregation.table
+</code></pre>
+<p>Or as a chart</p>
+<pre><code>aggregation.chart
+</code></pre>
+<p>And if you want to save that aggregation for future use.</p>
+<pre><code>aggregation.name = 'TopDomains'
+aggregation.save()
+</code></pre>
+<h3 id="sigma-rules">Sigma rules</h3>
+<h3 id="get-a-single-rule">Get a single rule</h3>
+<p>To get a Sigma rule that is stored on the server via uuid of the rule:</p>
+<pre><code class="language-python">rule = ts.get_sigma_rule(&quot;5266a592-b793-11ea-b3de-0242ac130004&quot;)
+</code></pre>
+<p>Returns an object, where you can do something like that:</p>
+<pre><code class="language-python">rule.data()
+</code></pre>
+<p>To get this:</p>
+<pre><code class="language-JSON">{
+  'title': 'Suspicious Installation of Zenmap',
+  'id': '5266a592-b793-11ea-b3de-0242ac130004',
+  'description': 'Detects suspicious installation of Zenmap',
+  'references': ['https://rmusser.net/docs/ATT&amp;CK-Stuff/ATT&amp;CK/Discovery.html'],
+  'author': 'Alexander Jaeger',
+  'date': '2020/06/26',
+  'modified': '2020/06/26',
+  'logsource': {
+    'product': 'linux',
+    'service': 'shell'
+  },
+  'detection': {
+    'keywords': ['*apt-get install zmap*'],
+    'condition': 'keywords'
+  },
+  'falsepositives': ['Unknown'],
+  'level': 'high',
+  'es_query': '(data_type:(&quot;shell\\:zsh\\:history&quot; OR &quot;bash\\:history\\:command&quot; OR &quot;apt\\:history\\:line&quot; OR &quot;selinux\\:line&quot;) AND &quot;*apt\\-get\\ install\\ zmap*&quot;)', 'file_name': 'lnx_susp_zenmap'
+}
+</code></pre>
+<h3 id="get-a-list-of-rules">Get a list of rules</h3>
+<p>Another option to explore Sigma rules is via the <code>list_sigma_rules</code> function.
+To get a list of available Sigma rules use:</p>
+<pre><code class="language-python">ts.list_sigma_rules()
+</code></pre>
+<p>The output can be:
++ A pandas DataFrame if the <code>as_pandas=True</code> is set
++ A python dict (default behavior)</p>
+<h3 id="other-options">Other Options</h3>
+<p>The sketch object can be used to do several other actions that are not documented in this first document, such as:</p>
+<ul>
+<li>Create/list/retrieve stories</li>
+<li>Manually add events to the sketch</li>
+<li>Add timelines to the sketch</li>
+<li>Modify the ACL of the sketch</li>
+<li>Archive the sketch (via the <code>sketch.archive</code> function)</li>
+<li>Comment on an event</li>
+<li>Delete a sketch</li>
+<li>Export the sketch data</li>
+<li>Run analyzers on the sketch.</li>
+</ul>
+<h2 id="examples">Examples</h2>
+<p>There are several examples using the API client in the <a href="../notebooks/">notebooks folder</a> in the Github repository.</p>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        <a href="../developer-guide/" class="md-footer__link md-footer__link--prev" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Getting started
+            </div>
+          </div>
+        </a>
+      
+      
+        <a href="../api-upload-data/" class="md-footer__link md-footer__link--next" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Upload data via API
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+        
+      </div>
+      
+  <div class="md-footer-social">
+    
+      
+      
+        
+        
+      
+      <a href="https://github.com/google/timesketch" target="_blank" rel="noopener" title="github.com" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+      </a>
+    
+  </div>
+
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.sections", "navigation.tabs"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../../assets/javascripts/workers/search.fe42c31b.min.js", "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.7353b375.min.js"></script>
+      
+    
+  </body>
+</html>
